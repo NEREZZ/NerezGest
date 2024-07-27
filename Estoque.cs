@@ -29,7 +29,7 @@ namespace Vendas
             using (StreamWriter escritor = new StreamWriter(arq, true)) // Abre o arquivo para escrita, permitindo adicionar texto ao final do arquivo
             {
                 // Escreve uma linha no arquivo com os dados fornecidos
-                escritor.WriteLine($" {serial} | {nome} | R${valor:F2} | 0{quantidade} |");
+                escritor.WriteLine($" {serial} | {nome} | {valor:F2} | 0{quantidade} |");
             }
         }
 
